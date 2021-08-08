@@ -20,14 +20,14 @@ const Products = ({ products, productspage }) => {
   );
 }
 
-export async function getServerSideProps() {
-  const { API_URL } = process.env
+export async function getStaticProps() {
+  const { API_URL } = process.env;
 
   const [ProductsRes, ProductsPageRes] = await Promise.all([
     fetch(`${API_URL}/products`),
     fetch(`${API_URL}/productspage`),
   ]);
-  
+
   const ProductsData = await ProductsRes.json();
   const ProductsPageData = await ProductsPageRes.json();
 
