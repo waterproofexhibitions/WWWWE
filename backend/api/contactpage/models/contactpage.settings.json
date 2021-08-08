@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "contactpages",
+  "info": {
+    "name": "Contact Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

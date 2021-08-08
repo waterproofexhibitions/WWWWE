@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "productspages",
+  "info": {
+    "name": "Products Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

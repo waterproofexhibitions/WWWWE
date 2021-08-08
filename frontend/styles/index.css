@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-green-500;
+}
+
+h1 {
+    @apply font-bold text-7xl
+}
+
+@layer components {
+    .nav-container ul li {
+        @apply py-2 px-4
+    }
+}
